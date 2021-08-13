@@ -84,6 +84,8 @@ function setStyle(itemId, type) {
   document.getElementById(itemId).style.backgroundColor = color;
   document.getElementById(itemId).style.color = "white";
   if (type) gameOver = true;
+  if (gameOver)
+    document.getElementById("container").style.pointerEvents = "none";
 }
 
 // 在剩下的格子中隨機畫 O
